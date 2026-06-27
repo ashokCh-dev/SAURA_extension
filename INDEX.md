@@ -3,8 +3,8 @@
 ## 📚 Quick Navigation
 
 ### Start Here
-- **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - 1-page summary of all results
-- **[COMPREHENSIVE_RESULTS_P4_TO_P128.md](COMPREHENSIVE_RESULTS_P4_TO_P128.md)** - Full analysis (15KB)
+- **[results/QUICK_REFERENCE.md](results/QUICK_REFERENCE.md)** - 1-page summary of all results
+- **[results/COMPREHENSIVE_RESULTS_P4_TO_P128.md](results/COMPREHENSIVE_RESULTS_P4_TO_P128.md)** - Full analysis (15KB)
 
 ### Original Documentation  
 - **[README_2D_SUARA.md](README_2D_SUARA.md)** - Original implementation guide
@@ -18,7 +18,7 @@
 - [suara_2d_results/master_summary.md](suara_2d_results/master_summary.md) - Quick summary table
 
 ### Status & Monitoring
-- **[LARGE_TESTS_STATUS.md](LARGE_TESTS_STATUS.md)** - Large-scale test info
+- **[results/LARGE_TESTS_STATUS.md](results/LARGE_TESTS_STATUS.md)** - Large-scale test info
 
 ## �� Top Results
 
@@ -57,23 +57,27 @@ mpirun --oversubscribe -np 16 ./suara_2d_comprehensive
 ## 📁 Project Structure
 
 ```
-nhpc-prj/
+SAURA_extension/
 ├── suara_2d_comprehensive.c          # Main implementation
 ├── run_selected_tests.sh             # Test automation (4-128)
 ├── run_large_tests.sh                # Large tests (128-4096)
 ├── monitor_tests.sh                  # Progress monitoring
 ├── INDEX.md                          # This file
-├── QUICK_REFERENCE.md                # 1-page summary
-├── COMPREHENSIVE_RESULTS_P4_TO_P128.md  # Full analysis
 ├── README_2D_SUARA.md                # Original documentation
-├── LARGE_TESTS_STATUS.md             # Test status info
-└── suara_2d_results/                 # All result files
-    ├── master_summary.md
-    ├── suara_2d_results_P4.md
-    ├── suara_2d_results_P16.md
-    ├── suara_2d_results_P36.md
-    ├── suara_2d_results_P64.md
-    └── suara_2d_results_P128.md
+├── results/                          # All result files & analysis
+│   ├── QUICK_REFERENCE.md            # 1-page summary
+│   ├── COMPREHENSIVE_RESULTS_P4_TO_P128.md  # Full analysis
+│   ├── COMBINED_RESULTS_P4_TO_P128.md
+│   ├── RESULTS_ANALYSIS_AND_EXPLANATION.md
+│   ├── LARGE_TESTS_STATUS.md          # Test status info
+│   └── suara_2d_results_P256.md
+└── animations/                       # 3D visualization suite
+    ├── suara_3d_animation.py
+    ├── suara_3d_manim_animation.py
+    ├── suara_3d_web_visualization.html
+    ├── requirements_visualization.txt
+    ├── VISUALIZATION_GUIDE.md
+    └── QUICK_START_VISUALIZATION.md
 ```
 
 ## 🔬 For Your Report/Presentation
